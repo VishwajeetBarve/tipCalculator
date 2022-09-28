@@ -1,0 +1,258 @@
+.attribution{
+    align-self: center;
+    margin: 20px 10px 0 10px ;
+    font-size: 12px;
+} 
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Space Mono', monospace
+}
+label{
+    display: flex;
+    flex-direction: column;
+    color:  hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 14px;
+    margin: 10px 10px;
+}
+
+input{
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 0;
+    color: hsl(183, 100%, 15%) ;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    text-align: right;
+    width: 100%;
+
+}
+
+input:focus{
+    outline: none;
+}
+
+
+
+.currencyinput,.personsinput{
+
+    display: flex;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.dollar,.person{
+   
+    align-self: center;
+}
+
+.header{
+ 
+    display: flex;
+    background-color: hsl(185, 41%, 84%);
+    justify-content: center;
+    padding: 50px 0 60px 0;
+    margin: 0px 0 50px;
+    
+}
+
+.parent{
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+    margin-top: -80px;
+    
+    background-color: white;
+}
+
+
+.amount{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tipspercent{
+ 
+    display: grid;
+    grid-template-columns: repeat(2,50%) ;
+    gap: 10px;
+    margin: 0 10px;
+
+}
+.tipspercent > h4{
+    
+    grid-column: span 2;
+    margin: 0%;
+    color:  hsl(186, 14%, 43%);
+}
+
+.tipspercent>div{
+   
+   background-color: hsl(183, 100%, 15%);
+   border-radius: 5px;
+   text-align: center;
+   color: white;
+   font-weight: 700;
+   padding: 10px 0;
+}
+
+.tipspercent > div:hover{
+    
+    background-color: hsl(172, 67%, 45%);
+    color:  hsl(183, 100%, 15%) ;
+}
+
+.tipspercent>input{
+
+    border: none;
+    font-family: 'Space Mono', monospace;
+    padding: 10px;
+    margin:0
+    
+}
+
+.tipspercent>input::placeholder{
+
+    color: hsl(186, 14%, 43%);
+   font-weight: 700;
+   font-size: 16px;
+}
+
+.peopleerror{
+  
+    color: red;
+    display: block;
+    font-size: 10px;
+}
+
+.total{
+ 
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 15px;
+    padding: 30px 15px;
+    margin: 20px 10px;
+}
+.tipsdisplay, .totaldisplay{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin: 0 5px 20px;
+}
+.resetbtn{
+    
+    width: 90%;
+    background-color: hsl(172, 67%, 45%);
+    color:  hsl(183, 100%, 15%) ;
+    align-self: center;
+    border: none;
+    padding: 10px 0;
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.a{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px;
+
+}
+
+.a>h3{
+    
+    margin: 0;
+    font-size: small;
+    
+}
+.a>span{
+    
+    font-size: 12px;
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+}
+
+
+.perperson, .tipamt{
+    
+    color: hsl(184, 14%, 56%);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 1000px) {
+    body {
+      
+      background-color: hsl(185, 41%, 84%);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .parent{
+        
+        align-self: center;
+        display: flex;
+        border-radius: 30px;
+        gap:30px;
+    }
+
+    .tipspercent{
+        
+        grid-template-columns: repeat(3,30%) ;
+        
+    }
+
+    .tipspercent>h4{
+        
+        grid-column: span 3;
+    }
+
+    .resetbtn{
+        
+        width: 80%;
+        position: absolute;
+        bottom: 10%;
+    }
+
+    .resetbtn:hover{
+        
+        background-color: hsl(189, 41%, 97%);
+     }
+
+    .amount{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+        
+    }
+
+    .total{
+        
+        border-radius: 10px;
+        padding: 30px;
+        margin:  0;
+        width: 50%;
+        position: relative;
+    }
+    
+  }

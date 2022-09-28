@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  
+   <!-- Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+  <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Epilogue:wght@500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800;9..144,900&family=Inter:wght@400;600;700&family=League+Spartan:wght@400;500;700&family=Lexend+Deca&family=Manrope:wght@600;700&family=Montserrat&family=Open+Sans&family=Oswald&family=Overpass:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Raleway&family=Roboto&family=Roboto+Condensed&family=Seaweed+Script&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="header">
+    <img class="logo" src="./images/logo.svg" alt="">
+  </div>
+  <div class="parent">
+    <div class="amount">
+      <label for="bill">Bill
+      
+        <span class="currencyinput"><img class="dollar" src="images/icon-dollar.svg" alt=""><input class="billamount" type="text" placeholder="00" ></span>
+    
+      </label>
+
+    <div class="tipspercent">
+      <h4>Select Tip %</h4>
+      <div class="tippercent">5%</div>
+      <div class="tippercent">10%</div>
+      <div class="tippercent">15%</div>
+      <div class="tippercent">25%</div>
+      <div class="tippercent">50%</div>
+      <input class="custom" oninput="customtip()" type="text" id="customper" placeholder="Custom %">
+      
+    </div>
+    
+    <label for="numberpeople"> Number of People <div class="peopleerror"></div>
+      <span class="personsinput" oninput="zerocheck()"><img class="person" src="images/icon-person.svg" alt=""><input class="numberofpeople" type="text" placeholder="1"></span>
+    </label>
+    
+    </div>
+    <!-- Total -->
+    <div class="total">
+      <div class="tipsdisplay">
+        <div class="a">
+          <h3>Tip Amount</h3> <span>/ person </span>
+        </div>
+        <div>
+         <span  class="tipamt"> $00.00</span>
+        </div>
+    </div>
+      <div class="totaldisplay">
+        <div class="a">
+        <h3>Total </h3> <span>/ person </span>
+      </div>
+    <div>
+       <span class="perperson"> $00.00</span>
+    </div>
+      </div>
+    <!-- <button></button> -->
+    <button class="resetbtn">RESET</button>
+  </div>
+ </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by Vishwajeet
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
